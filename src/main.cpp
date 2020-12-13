@@ -111,8 +111,8 @@ word readData(unsigned int addr, int bank) {
     digitalWriteFast(chipSelect, LOW);
   }
 
-  // $TODO: wait TRC is 70ns, this overshoots timing by a lot, can be improved a lot
-  delayMicroseconds(1);
+  // $TODO: wait TRC is 70ns, this overshoots timing, can be improved
+  delayNanoseconds(80);
 
   dataWord = readWord();
 
@@ -132,47 +132,6 @@ void printHex(int num, int precision) {
 
   sprintf(tmp, format, num);
   Serial.print(tmp);
-}
-
-// Garbage code that worked for a proof of concept
-void readSerialCommandClassic(char in) {
-  switch(in) {
-    case 'R' :
-      Serial.println("CMD: R");
-      for (unsigned int count = 0; count <= 0x1FFFFF; count = count + 16) {
-        printHex(count, 6);
-        Serial.print(":\t\t");
-
-        for (int i = 0; i < 16; i++) {
-          printHex(readData(count + i, LOW), 4);
-          Serial.print("\t");
-        }
-
-        Serial.print("\n");
-        delay(5);
-      }
-
-      for (unsigned int count = 0; count <= 0x1FFFFF; count = count + 16) {
-        printHex(count + 0x200000, 6);
-        Serial.print(":\t\t");
-
-        for (int i = 0; i < 16; i++) {
-          printHex(readData(count + i, HIGH), 4);
-          Serial.print("\t");
-        }
-
-        Serial.print("\n");
-        delay(5);
-      }
-      break;
-    case 'L' :
-      Serial.println("CMD: R");
-      printHex(readData(0x8003, LOW), 4); Serial.print("\n");
-      break;
-    default:
-      Serial.println("Invalid Command");
-      break;
-  }
 }
 
 uint8_t hexDecimalToBin(char decimal) {
@@ -197,17 +156,17 @@ uint8_t hexDecimalToBin(char decimal) {
       return 8;
     case '9':
       return 9;
-    case 'A':
+    case 'a':
       return 10;
-    case 'B':
+    case 'b':
       return 11;
-    case 'C':
+    case 'c':
       return 12;
-    case 'D':
+    case 'd':
       return 13;
-    case 'E':
+    case 'e':
       return 14;
-    case 'F':
+    case 'f':
       return 15;
     default:
       return 0;
@@ -233,7 +192,7 @@ COMMAND stringToCommand(const String &commandString, uint32_t &address) {
       address = address + ((hexDecimal & 0xF) << offset);
     }
 
-    address = address & 0x7FFFFF;
+    address = address & 0x3FFFFF;
     return READ;
   } else {
     return UNKNOWN;

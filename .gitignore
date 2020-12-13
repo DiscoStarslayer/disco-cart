@@ -1,3 +1,6 @@
 .pio
 CMakeListsPrivate.txt
-cmake-build-*/ 
+cmake-build-*/
+*.bin
+
+node_modules

@@ -1,0 +1,8 @@
+{
+  "name": "manager",
+  "version": "1.0.0",
+  "dependencies": {
+    "serialport": "^9.0.3",
+    "yargs": "^16.2.0"
+  }
+}
