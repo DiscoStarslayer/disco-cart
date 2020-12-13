@@ -1,7 +1,3 @@
-//
-// Created by Darren on 2020-12-12.
-//
-
 #ifndef VSMILE_DUMPER_MAIN_H
 #define VSMILE_DUMPER_MAIN_H
 
