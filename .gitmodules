@@ -1,0 +1,6 @@
+[submodule "cartridge/teensy_library"]
+	path = cartridge/teensy_library
+	url = git@github.com:XenGi/teensy_library.git
+[submodule "cartridge/teensy.pretty"]
+	path = cartridge/teensy.pretty
+	url = git@github.com:XenGi/teensy.pretty.git
