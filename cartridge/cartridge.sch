@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 2
+Sheet 1 1
 Title ""
 Date ""
 Rev ""
@@ -282,37 +282,29 @@ Entry Bus Bus
 	4350 6300 4450 6200
 Entry Bus Bus
 	6150 6300 6250 6200
-Text Label 1300 2750 2    50   ~ 0
-DQ0
-Text Label 1300 2850 2    50   ~ 0
-DQ1
 Text Label 1300 2950 2    50   ~ 0
+DQ1
+Text Label 1300 2850 2    50   ~ 0
 DQ2
-Text Label 1300 3050 2    50   ~ 0
+Text Label 1300 2750 2    50   ~ 0
 DQ3
-Text Label 1300 3150 2    50   ~ 0
-DQ4
-Text Label 1300 3250 2    50   ~ 0
-DQ5
-Text Label 1300 3350 2    50   ~ 0
-DQ6
-Text Label 1300 3450 2    50   ~ 0
+Text Label 3500 3650 0    50   ~ 0
 DQ7
-Text Label 1300 3550 2    50   ~ 0
+Text Label 1300 3450 2    50   ~ 0
 DQ8
-Text Label 1300 3650 2    50   ~ 0
+Text Label 1300 3350 2    50   ~ 0
 DQ9
-Text Label 1300 3750 2    50   ~ 0
+Text Label 1300 3250 2    50   ~ 0
 DQ10
-Text Label 1300 3850 2    50   ~ 0
+Text Label 1300 3150 2    50   ~ 0
 DQ11
-Text Label 1300 4350 2    50   ~ 0
+Text Label 3500 3950 0    50   ~ 0
 DQ15
-Text Label 1300 4250 2    50   ~ 0
+Text Label 3500 4150 0    50   ~ 0
 DQ14
-Text Label 1300 4150 2    50   ~ 0
+Text Label 3500 3850 0    50   ~ 0
 DQ13
-Text Label 1300 3950 2    50   ~ 0
+Text Label 3500 3750 0    50   ~ 0
 DQ12
 $Comp
 L Teensy:Teensy4.1 U1
@@ -355,50 +347,48 @@ Wire Wire Line
 	3500 3850 3800 3850
 Wire Wire Line
 	3500 3950 3800 3950
-Text Label 1300 4450 2    50   ~ 0
+Text Label 1300 3650 2    50   ~ 0
 A0
-Text Label 1300 4550 2    50   ~ 0
+Text Label 3500 4350 0    50   ~ 0
 A1
-Text Label 1300 4650 2    50   ~ 0
+Text Label 3500 4250 0    50   ~ 0
 A2
-Text Label 1300 4750 2    50   ~ 0
+Text Label 1300 3750 2    50   ~ 0
 A3
-Text Label 1300 4850 2    50   ~ 0
+Text Label 3500 4450 0    50   ~ 0
 A4
-Text Label 1300 4950 2    50   ~ 0
+Text Label 1300 3850 2    50   ~ 0
 A5
-Text Label 3500 4950 0    50   ~ 0
+Text Label 3500 4550 0    50   ~ 0
 A6
-Text Label 3500 4850 0    50   ~ 0
+Text Label 1300 3950 2    50   ~ 0
 A7
 Text Label 3500 4750 0    50   ~ 0
 A8
-Text Label 3500 4650 0    50   ~ 0
+Text Label 1300 4250 2    50   ~ 0
 A9
-Text Label 3500 4550 0    50   ~ 0
+Text Label 3500 4850 0    50   ~ 0
 A10
-Text Label 3500 4450 0    50   ~ 0
+Text Label 1300 4350 2    50   ~ 0
 A11
-Text Label 3500 4350 0    50   ~ 0
+Text Label 3500 4950 0    50   ~ 0
 A12
-Text Label 3500 4250 0    50   ~ 0
+Text Label 1300 4450 2    50   ~ 0
 A13
-Text Label 3500 4150 0    50   ~ 0
+Text Label 1300 4550 2    50   ~ 0
 A14
-Text Label 3500 3950 0    50   ~ 0
+Text Label 1300 4650 2    50   ~ 0
 A15
-Text Label 3500 3850 0    50   ~ 0
+Text Label 1300 3550 2    50   ~ 0
 A16
-Text Label 3500 3750 0    50   ~ 0
+Text Label 3500 4650 0    50   ~ 0
 A17
-Text Label 3500 3650 0    50   ~ 0
+Text Label 1300 4150 2    50   ~ 0
 A18
-Text Label 3500 3550 0    50   ~ 0
+Text Label 1300 4750 2    50   ~ 0
 A19
-Text Label 3500 3450 0    50   ~ 0
+Text Label 1300 4850 2    50   ~ 0
 A20
-Text Label 3500 3350 0    50   ~ 0
-A21
 Wire Wire Line
 	3500 3350 3800 3350
 Entry Bus Bus
@@ -1361,8 +1351,6 @@ Entry Bus Bus
 Text Label 1350 6300 2    50   ~ 0
 A[0..21]
 Wire Wire Line
-	1000 2750 1300 2750
-Wire Wire Line
 	1000 2850 1300 2850
 Wire Wire Line
 	1000 2950 1300 2950
@@ -1373,33 +1361,33 @@ Wire Wire Line
 Wire Wire Line
 	1000 3250 1300 3250
 Wire Wire Line
-	1300 3350 1000 3350
+	1000 3350 1300 3350
 Wire Wire Line
-	1000 3450 1300 3450
+	1300 3450 1000 3450
 Wire Wire Line
-	1300 3550 1000 3550
+	1000 3550 1300 3550
 Wire Wire Line
-	1000 3650 1300 3650
+	1300 3650 1000 3650
 Wire Wire Line
-	1300 3750 1000 3750
+	1000 3750 1300 3750
 Wire Wire Line
-	1000 3850 1300 3850
+	1300 3850 1000 3850
 Wire Wire Line
-	1300 3950 1000 3950
+	1000 3950 1300 3950
 Wire Wire Line
-	1000 4150 1300 4150
+	1300 4150 1000 4150
 Wire Wire Line
-	1300 4250 1000 4250
+	1000 4250 1300 4250
 Wire Wire Line
-	1000 4350 1300 4350
+	1300 4350 1000 4350
 Wire Wire Line
-	1300 4450 1000 4450
+	1000 4450 1300 4450
 Wire Wire Line
-	1000 4550 1300 4550
+	1300 4550 1000 4550
 Wire Wire Line
-	1300 4650 1000 4650
+	1000 4650 1300 4650
 Wire Wire Line
-	1000 4750 1300 4750
+	1300 4750 1000 4750
 Wire Wire Line
 	1300 4850 1000 4850
 Wire Wire Line
@@ -1608,36 +1596,6 @@ Wire Wire Line
 	4950 7250 5300 7250
 Wire Wire Line
 	5800 7250 6100 7250
-NoConn ~ 1300 5150
-NoConn ~ 1300 5250
-NoConn ~ 1300 5400
-NoConn ~ 1300 5500
-NoConn ~ 1300 5600
-NoConn ~ 1300 5700
-NoConn ~ 1300 5800
-NoConn ~ 2100 6100
-NoConn ~ 2250 6100
-NoConn ~ 2400 6100
-NoConn ~ 2550 6100
-NoConn ~ 2700 6100
-Text GLabel 3500 5200 2    50   Input ~ 0
-RX-
-Text GLabel 3500 5300 2    50   Input ~ 0
-GND
-Text GLabel 3500 5400 2    50   Input ~ 0
-TX+
-Text GLabel 3500 5500 2    50   Input ~ 0
-TX-
-Text GLabel 3500 5600 2    50   Input ~ 0
-LED
-Text GLabel 3500 5700 2    50   Input ~ 0
-RX+
-$Sheet
-S 2050 1150 1900 700 
-U 614E8D8C
-F0 "ethernet" 50
-F1 "ethernet.sch" 50
-$EndSheet
 $Comp
 L VSmile:D_Schottky_x2_KCom_AAK D1
 U 1 1 61570A0C
@@ -1649,12 +1607,24 @@ F 3 "~" H 1400 7050 50  0001 C CNN
 	1    1400 7050
 	0    -1   -1   0   
 $EndComp
+Text Label 1300 4950 2    50   ~ 0
+A21
+Text Label 1300 3050 2    50   ~ 0
+DQ0
+Text Label 3500 3550 0    50   ~ 0
+DQ6
+Text Label 3500 3450 0    50   ~ 0
+DQ5
+Text Label 3500 3350 0    50   ~ 0
+DQ4
+Wire Wire Line
+	1000 2750 1300 2750
+Text Label 2400 6100 3    50   ~ 0
+GND
 Wire Bus Line
 	1000 2000 10650 2000
 Wire Bus Line
 	1000 6300 9050 6300
-Wire Bus Line
-	900  4550 900  6200
 Wire Bus Line
 	6800 4400 6800 6200
 Wire Bus Line
@@ -1672,11 +1642,45 @@ Wire Bus Line
 Wire Bus Line
 	8600 4500 8600 6200
 Wire Bus Line
-	900  2100 900  4250
+	900  2100 900  6200
 Wire Bus Line
 	10750 2100 10750 4600
 Wire Bus Line
 	9150 3300 9150 6200
 Wire Bus Line
 	3900 3450 3900 6200
+Text Label 1300 5150 2    50   ~ 0
+GND
+Text Label 1300 5250 2    50   ~ 0
+GND
+Text Label 1300 5400 2    50   ~ 0
+GND
+Text Label 1300 5500 2    50   ~ 0
+GND
+Text Label 1300 5600 2    50   ~ 0
+GND
+Text Label 1300 5700 2    50   ~ 0
+GND
+Text Label 1300 5800 2    50   ~ 0
+GND
+Text Label 2100 6100 3    50   ~ 0
+GND
+Text Label 2250 6100 3    50   ~ 0
+GND
+Text Label 2550 6100 3    50   ~ 0
+GND
+Text Label 2700 6100 3    50   ~ 0
+GND
+Text Label 3500 5700 0    50   ~ 0
+GND
+Text Label 3500 5600 0    50   ~ 0
+GND
+Text Label 3500 5500 0    50   ~ 0
+GND
+Text Label 3500 5400 0    50   ~ 0
+GND
+Text Label 3500 5300 0    50   ~ 0
+GND
+Text Label 3500 5200 0    50   ~ 0
+GND
 $EndSCHEMATC
