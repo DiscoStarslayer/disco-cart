@@ -1,0 +1,102 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 5530843-5
+D VSmile Cartridge Compatable Connector
+K connector
+F ~
+$ENDCMP
+#
+$CMP AP7361C-10E
+D 1A Low Dropout regulator, positive, 1.0V fixed output, SOT-223
+K linear regulator ldo fixed positive
+F https://www.diodes.com/assets/Datasheets/AP7361C.pdf
+$ENDCMP
+#
+$CMP AP7361C-12E
+D 1A Low Dropout regulator, positive, 1.2V fixed output, SOT-223
+K linear regulator ldo fixed positive
+F https://www.diodes.com/assets/Datasheets/AP7361C.pdf
+$ENDCMP
+#
+$CMP AP7361C-15E
+D 1A Low Dropout regulator, positive, 1.5V fixed output, SOT-223
+K linear regulator ldo fixed positive
+F https://www.diodes.com/assets/Datasheets/AP7361C.pdf
+$ENDCMP
+#
+$CMP AP7361C-18E
+D 1A Low Dropout regulator, positive, 1.8V fixed output, SOT-223
+K linear regulator ldo fixed positive
+F https://www.diodes.com/assets/Datasheets/AP7361C.pdf
+$ENDCMP
+#
+$CMP AP7361C-25E
+D 1A Low Dropout regulator, positive, 2.5V fixed output, SOT-223
+K linear regulator ldo fixed positive
+F https://www.diodes.com/assets/Datasheets/AP7361C.pdf
+$ENDCMP
+#
+$CMP AP7361C-28E
+D 1A Low Dropout regulator, positive, 2.8V fixed output, SOT-223
+K linear regulator ldo fixed positive
+F https://www.diodes.com/assets/Datasheets/AP7361C.pdf
+$ENDCMP
+#
+$CMP AP7361C-33E
+D 1A Low Dropout regulator, positive, 3.3V fixed output, SOT-223
+K linear regulator ldo fixed positive
+F https://www.diodes.com/assets/Datasheets/AP7361C.pdf
+$ENDCMP
+#
+$CMP AZ1117EH-3.3_SOT223
+D 1A Low drop-out regulator, Fixed Output 3.3V, SOT-223
+K REGULATOR LDO 3.3V
+F https://www.diodes.com/assets/Datasheets/AZ1117E.pdf
+$ENDCMP
+#
+$CMP Conn_Cartridge
+D VSmile Cartridge Edge connector (Courtesy of Redherring32)
+K connector
+F ~
+$ENDCMP
+#
+$CMP D_Schottky_x2_KCom_AAK
+D Dual Schottky diode, common cathode on pin 3
+K diode
+F ~
+$ENDCMP
+#
+$CMP J1B1211CCD
+D RJ45 PoE 10/100 Base-TX Jack with Magnetic Module
+K single port ethernet transformer poe center-tap
+$ENDCMP
+#
+$CMP LM2937xMP
+D 500-mA Low Dropout Regulator, SOT-223
+K Voltage Regulator Low Dropuout Positive LDO
+F http://www.ti.com/lit/ds/symlink/lm2937.pdf
+$ENDCMP
+#
+$CMP LT1129-3.3_SOT223
+D 700mA Micropower Low drop-out regulator, Fixed Output 3.3V, SOT-223
+K REGULATOR LDO fixed positive
+F https://www.analog.com/media/en/technical-documentation/data-sheets/112935ff.pdf
+$ENDCMP
+#
+$CMP LT1129-5.0_SOT223
+D 700mA Micropower Low drop-out regulator, Fixed Output 5.0V, SOT-223
+K REGULATOR LDO Fixed Positive
+F https://www.analog.com/media/en/technical-documentation/data-sheets/112935ff.pdf
+$ENDCMP
+#
+$CMP SPX2920M3-5.0_SOT223
+D 400mA Low drop-out regulator, Fixed Output 5V, SOT-223
+K REGULATOR LDO 5V
+F http://www.zlgmcu.com/Sipex/LDO/PDF/spx2920.pdf
+$ENDCMP
+#
+$CMP SST39VF6401B
+D 64MBit Parallel Flash
+$ENDCMP
+#
+#End Doc Library

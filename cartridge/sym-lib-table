@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name VSmile)(type Legacy)(uri ${KIPRJMOD}/VSmile.lib)(options "")(descr ""))
+  (lib (name Teensy)(type Legacy)(uri ${KIPRJMOD}/teensy_library/teensy.lib)(options "")(descr ""))
+)

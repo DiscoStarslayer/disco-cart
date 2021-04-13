@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name VSmile)(type KiCad)(uri ${KIPRJMOD}/VSmile.pretty)(options "")(descr "V-Smile specific footprints"))
+  (lib (name Teensy)(type KiCad)(uri ${KIPRJMOD}/teensy.pretty)(options "")(descr "Teensy footprints"))
+)
