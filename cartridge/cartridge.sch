@@ -1005,7 +1005,7 @@ L VSmile:SN74CBTLV3126PWR U2
 U 1 1 602DA7C1
 P 5950 1300
 F 0 "U2" H 5950 1825 50  0000 C CNN
-F 1 "SN74CBTLV3126PWR" H 5950 1734 50  0000 C CNN
+F 1 "SN74CBTLV3125PW" H 5950 1734 50  0000 C CNN
 F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 5750 1700 50  0001 C CNN
 F 3 "" H 5750 1700 50  0001 C CNN
 	1    5950 1300
@@ -1018,11 +1018,11 @@ OE#
 Text Label 6300 1200 0    50   ~ 0
 ROM0_1
 Text Label 6300 1500 0    50   ~ 0
-RAM_RWB
+RAM_CSB
 Text Label 5600 1500 2    50   ~ 0
 WE#
 Text Label 5600 1400 2    50   ~ 0
-GND
+RAM_RWB
 Text Label 5600 1200 2    50   ~ 0
 OE#
 Text Label 5600 1100 2    50   ~ 0
@@ -1032,18 +1032,9 @@ Wire Wire Line
 Wire Wire Line
 	5000 1200 5000 1000
 Wire Wire Line
-	4750 1300 5300 1300
-Wire Wire Line
-	5300 1300 5300 1750
-Wire Wire Line
-	5300 1750 6750 1750
-Wire Wire Line
 	6750 1750 6750 1400
 Wire Wire Line
 	6750 1400 6300 1400
-Connection ~ 5300 1300
-Wire Wire Line
-	5300 1300 5600 1300
 Text Label 10400 4900 0    50   ~ 0
 WE#
 Text Label 10400 5000 0    50   ~ 0
@@ -1519,17 +1510,6 @@ Connection ~ 4900 6650
 Wire Wire Line
 	4900 6650 5300 6650
 $Comp
-L Device:C C2
-U 1 1 612096E8
-P 2850 7100
-F 0 "C2" H 2965 7146 50  0000 L CNN
-F 1 "0.1uF" H 2965 7055 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 2888 6950 50  0001 C CNN
-F 3 "~" H 2850 7100 50  0001 C CNN
-	1    2850 7100
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C C5
 U 1 1 61209B5C
 P 3700 7100
@@ -1538,17 +1518,6 @@ F 1 "0.1uF" H 3815 7055 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 3738 6950 50  0001 C CNN
 F 3 "~" H 3700 7100 50  0001 C CNN
 	1    3700 7100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C7
-U 1 1 6120A475
-P 4500 7100
-F 0 "C7" H 4615 7146 50  0000 L CNN
-F 1 "0.1uF" H 4615 7055 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 4538 6950 50  0001 C CNN
-F 3 "~" H 4500 7100 50  0001 C CNN
-	1    4500 7100
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1576,20 +1545,12 @@ F 3 "~" H 6100 7100 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5300 6950 6100 6950
-Text Label 2550 7250 0    50   ~ 0
-WE#
 Text Label 3350 7250 0    50   ~ 0
 OE#
-Text Label 4200 7250 0    50   ~ 0
-CE#
 Text Label 4950 7250 0    50   ~ 0
 RST#
 Text Label 5800 7250 0    50   ~ 0
 WP#
-Wire Wire Line
-	2550 7250 2850 7250
-Wire Wire Line
-	4200 7250 4500 7250
 Wire Wire Line
 	3350 7250 3700 7250
 Wire Wire Line
@@ -1621,34 +1582,6 @@ Wire Wire Line
 	1000 2750 1300 2750
 Text Label 2400 6100 3    50   ~ 0
 GND
-Wire Bus Line
-	1000 2000 10650 2000
-Wire Bus Line
-	1000 6300 9050 6300
-Wire Bus Line
-	6800 4400 6800 6200
-Wire Bus Line
-	6800 2100 6800 4100
-Wire Bus Line
-	8600 2100 8600 4200
-Wire Bus Line
-	4450 4400 4450 6200
-Wire Bus Line
-	4450 2100 4450 4100
-Wire Bus Line
-	6250 2100 6250 4200
-Wire Bus Line
-	6250 4500 6250 6200
-Wire Bus Line
-	8600 4500 8600 6200
-Wire Bus Line
-	900  2100 900  6200
-Wire Bus Line
-	10750 2100 10750 4600
-Wire Bus Line
-	9150 3300 9150 6200
-Wire Bus Line
-	3900 3450 3900 6200
 Text Label 1300 5150 2    50   ~ 0
 GND
 Text Label 1300 5250 2    50   ~ 0
@@ -1683,4 +1616,41 @@ Text Label 3500 5300 0    50   ~ 0
 GND
 Text Label 3500 5200 0    50   ~ 0
 GND
+Wire Wire Line
+	4750 1300 5200 1300
+Wire Wire Line
+	5200 1750 5200 1300
+Wire Wire Line
+	5200 1750 6750 1750
+Connection ~ 5200 1300
+Wire Wire Line
+	5200 1300 5600 1300
+Wire Bus Line
+	1000 2000 10650 2000
+Wire Bus Line
+	1000 6300 9050 6300
+Wire Bus Line
+	6800 4400 6800 6200
+Wire Bus Line
+	6800 2100 6800 4100
+Wire Bus Line
+	8600 2100 8600 4200
+Wire Bus Line
+	4450 4400 4450 6200
+Wire Bus Line
+	4450 2100 4450 4100
+Wire Bus Line
+	6250 2100 6250 4200
+Wire Bus Line
+	6250 4500 6250 6200
+Wire Bus Line
+	8600 4500 8600 6200
+Wire Bus Line
+	900  2100 900  6200
+Wire Bus Line
+	10750 2100 10750 4600
+Wire Bus Line
+	9150 3300 9150 6200
+Wire Bus Line
+	3900 3450 3900 6200
 $EndSCHEMATC
