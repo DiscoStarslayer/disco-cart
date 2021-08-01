@@ -66,9 +66,12 @@ node .\index.js --port=COM3 --mode=sddump --name=thomas.bin --length=3FFFFF
 ### Flash local rom to flashcart
 
 ```shell
-# Switch: Dump mode
+# Switch: Write mode
 node .\index.js --port=COM3 --mode=write --rom=./thomas.bin
 ```
+
+### Inserting into a V.Smile
+Ensure mode select switch is in Cart mode. Teensy can remain inserted in cartridge while in this mode. If you wish to write a new flash, you can do so while the cartridge is inserted by first switching mode to Write mode and running the write action from the manager
 
 ## Args
 
