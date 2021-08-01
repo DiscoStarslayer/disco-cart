@@ -42,9 +42,9 @@ yarn
 5. Socket Teensy into Disco-Cart, ensure USB port on teensy lines up with the USB silkscreen on the board
 6. Move mode select switch to the desired position
 ![Mode Select Switch](images/mode-switch.jpg)
-Left: Cart mode, to insert into a V-Smile and boot a flashed rom
-Middle: Flash mode, select this mode to read/write to the internal flash on the Disco-Cart
-Right: Dump mode, select this mode to read/write from an inserted retail cartridge
+- `Left`: Cart mode, to insert into a V-Smile and boot a flashed rom
+- `Middle`: Flash mode, select this mode to read/write to the internal flash on the Disco-Cart
+- `Right`: Dump mode, select this mode to read/write from an inserted retail cartridge
 7. Use manager scripts to perform your desired action
 
 ## Examples
