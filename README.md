@@ -77,7 +77,7 @@ Ensure mode select switch is in Cart mode. Teensy can remain inserted in cartrid
 
 ### `port`
 
-Determines the serial port to connect to, defaults to `COM3`
+Determines the serial port to connect to, defaults to `COM3` for Windows or `/dev/ttyACM0` for Linux.
 
 
 ### `out`
