@@ -97,12 +97,12 @@ void setup() {
   delay(2);
   Serial.println("Started Serial COM");
 
-  if (!sd.begin(SdioConfig(FIFO_SDIO))) {
-    Serial.println("Failed to detect sd card");
-    sd.initErrorHalt(&Serial);
-  } else {
-    sdDetected = true;
-  }
+//  if (!sd.begin(SdioConfig(FIFO_SDIO))) {
+//    Serial.println("Failed to detect sd card");
+//    sd.initErrorHalt(&Serial);
+//  } else {
+    sdDetected = false;
+//  }
 }
 
 void setupWrite() {
