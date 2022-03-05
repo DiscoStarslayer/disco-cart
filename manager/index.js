@@ -5,7 +5,7 @@ const { hideBin } = require('yargs/helpers');
 
 const { argv } = yargs(hideBin(process.argv))
 
-const portPath = argv.port || 'COM3';
+const portPath = argv.port || (process.platform == 'win32' ? 'COM3' : '/dev/ttyACM0');
 
 const port = new SerialPort(portPath, { baudRate: 4608000 });
 

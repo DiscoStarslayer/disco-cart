@@ -42,9 +42,9 @@ yarn
 5. Socket Teensy into Disco-Cart, ensure USB port on teensy lines up with the USB silkscreen on the board
 6. Move mode select switch to the desired position
 ![Mode Select Switch](images/mode-switch.jpg)
-Left: Cart mode, to insert into a V-Smile and boot a flashed rom
-Middle: Flash mode, select this mode to read/write to the internal flash on the Disco-Cart
-Right: Dump mode, select this mode to read/write from an inserted retail cartridge
+- `Left`: Cart mode, to insert into a V-Smile and boot a flashed rom
+- `Middle`: Flash mode, select this mode to read/write to the internal flash on the Disco-Cart
+- `Right`: Dump mode, select this mode to read/write from an inserted retail cartridge
 7. Use manager scripts to perform your desired action
 
 ## Examples
@@ -66,15 +66,18 @@ node .\index.js --port=COM3 --mode=sddump --name=thomas.bin --length=3FFFFF
 ### Flash local rom to flashcart
 
 ```shell
-# Switch: Dump mode
+# Switch: Write mode
 node .\index.js --port=COM3 --mode=write --rom=./thomas.bin
 ```
+
+### Inserting into a V.Smile
+Ensure mode select switch is in Cart mode. Teensy can remain inserted in cartridge while in this mode. If you wish to write a new flash, you can do so while the cartridge is inserted by first switching mode to Write mode and running the write action from the manager
 
 ## Args
 
 ### `port`
 
-Determines the serial port to connect to, defaults to `COM3`
+Determines the serial port to connect to, defaults to `COM3` for Windows or `/dev/ttyACM0` for Linux.
 
 
 ### `out`
