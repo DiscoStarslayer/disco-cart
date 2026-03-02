@@ -99,7 +99,7 @@ void setup() {
 
   if (!sd.begin(SdioConfig(FIFO_SDIO))) {
     Serial.println("Failed to detect sd card");
-    sd.initErrorHalt(&Serial);
+    sd.initErrorPrint(&Serial);
   } else {
     sdDetected = true;
   }
